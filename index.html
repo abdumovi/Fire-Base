@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/normaliza.css">
+  <link rel="stylesheet" href="./css/column.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card-contents flex aligan">
+      <div class="card-ops">
+      </div>
+      <div class="main-card">
+        <div class="main-card-img margin">
+          <img src="./img/main-img.svg" alt="main-img" width="120px" height="120px">
+        </div>
+        <h3 class="card-title">Let’s get you set up</h3>
+        <p class="main-card-text margin tex">Itshould only take a couple of minutesto pair with your watch</p>
+      </div>
+      <label class="chack-box-lable margin" for="box"></label>
+      <input class="main-card-input" id="box" type="checkbox">
+      <div id="firs-card" class="firs-card">
+        <form class="form-contents" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="full-name flex betwen aligan">
+            <p>Name</p>
+            <label><input class="fullname-input" type="text" id="fulname" name="fullname" placeholder="Full Name" required autocomplete="off"></label>
+          </div>
+          <div class="radio-buttons flex aligan">
+            <p>Gender</p>
+            <div class="radio-btns flex">
+              <input class="radio-btn" type="radio" id="radio-button-male" name="radio-btn" required>
+              <label class="radio-input radio-img1 radio-1" for="radio-button-male">Male</label>
+              <input class="radio-btn" type="radio" id="radio-button-fmale" name="radio-btn" required>
+              <label class="radio-input radio-img2 radiomargin radio-2" for="radio-button-fmale">Female</label>
+            </div>
+          </div>
+          <div class="birth-data flex betwen aligan">
+            <p>Date of Birth</p>
+            <label><input class="fullname-input pad-data" type="date" id="birth-data" name="birth-data" required></label>
+          </div>
+          <div class="email-input flex betwen aligan">
+            <p>Email</p>
+            <label><input class="fullname-input" type="email" id="email" name="email" placeholder="kendall@emailcom" autocomplete="off" required></label>
+          </div>
+          <div class="phone-input flex betwen aligan">
+            <p>Mobile</p>
+            <label><input class="fullname-input" type="tel" id="phone" name="phone" placeholder="+91 98765 43210" autocomplete="off" required></label>
+          </div>
+          <div class="password-input flex betwen aligan">
+            <p>Customer ID</p>
+            <label><input class="fullname-input" type="password" id="password" name="id" placeholder="576802-ERD0348 45" autocomplete="off" required></label>
+          </div>
+          <div class="propdy-contetts flex betwen aligan">
+            <p>Membership</p>
+            <input class="propdy-radios" type="radio" name="propdy" id="classic" required>
+            <label class="propdy-labels" for="classic">Classic</label>
+            <input class="propdy-radios" type="radio" name="propdy" id="silver" required>
+            <label class="propdy-labels" for="silver">Silver</label>
+            <input class="propdy-radios" type="radio" name="propdy" id="gold" required>
+            <label class="propdy-labels" for="gold">Gold</label>
+          </div>
+          <div class="btns flex aligan">
+            <button type="reset" id="cansl-btn" name="cansl-btn" class="cansl-btn">CANCEL</button>
+            <label for="cansl-btn"></label>
+            <button type="submit" id="save-btn" name="save-btn" class="save-btn">SAVE</button>
+            <label for="save-btn"></label>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

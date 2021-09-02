@@ -1,0 +1,300 @@
+*,*::before,*::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+body{
+  
+  background: #F2F2F2;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 9px; 
+  color: #373D40;
+}
+
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+.card-contents{
+  height: 600px;
+  position: relative;
+}
+.main-card{
+  background: #FFD500;
+  border-radius: 21px 0px 0px 21px;
+  width: 276px;
+  position: relative;
+  z-index: 3;
+  height: 446px;
+}
+.card-ops{
+  height: 500px;
+  background: #F2F2F2;
+  width: 200px;
+  position: absolute;
+  z-index: 2;
+  transform: translate(-73%);
+}
+.main-card-img{
+  width: 120px;
+  margin-bottom: 57px;
+  padding-top: 80px;
+}
+.card-title{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #383838; 
+  margin-bottom: 6px; 
+}
+.main-card-text{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 14px;
+  color: #383838;  
+  width: 138px;
+  padding-bottom: 132px;
+
+}
+.main-card-input{
+ display: none;
+}
+
+.main-card-inputs{
+  width: 30px;
+  position: relative;
+}
+.chack-box-lable::after{
+  content: "";
+  background-repeat: no-repeat;
+  position: absolute;
+  background-image: url('../img/arrow.svg');
+  width: 32px;
+  height: 32px;
+  left: 121px;
+  z-index: 5;
+  bottom: 139px;
+
+}
+/* firs card */
+.firs-card{
+  padding: 53px 73px;
+  width: 403px;
+  background: #FFFFFF;
+  border-radius: 0px 21px 21px 0px;
+  position: absolute;
+  transform: translate(-33%);
+  transition:all 0.5s ease;
+
+}
+.main-card-input:checked +.firs-card{
+  transform: translate(68%);
+  transition-timing-function:ease-in;
+}
+/* form contents */
+.form-contents{
+  width: 260px;
+  height: 339px;
+  position: relative;
+  
+}
+.fullname-input{
+  padding: 8px 10px;
+  width: 190px;
+  transition: all .4s ease;
+}
+.full-name{
+  margin-bottom: 15px;
+}
+input{
+  background: rgba(245, 248, 249, 0.3);
+  border: 0.586985px solid #CAD7DD;
+  border-radius: 2.64604px;
+  outline-color: #bee1f1;
+ 
+}
+input[type="placeholder"]{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 9px;
+  line-height: 9px;
+}
+.radio-btn{
+  display: none;
+}
+.radio-btns{
+  margin-left: 44px;
+ 
+}
+.radio-input{
+  cursor: pointer;
+  display: block;
+  color: #B1BFCD;
+  transition: all .5s ease;
+}
+.radio-input::before{
+  content: "";
+  width: 12px;
+  display: inline-block;
+  height: 12px;
+  position: relative;
+  background-size: cover;
+  margin-right: 18px;
+ 
+}
+.radio-buttons{
+  margin-bottom: 16px;
+}
+.radiomargin{
+  margin-left: 24px;
+}
+.radio-img1{
+  background-repeat: no-repeat;
+  background-image: url('../img/male.svg');
+ 
+}
+.radio-img2{
+  height: 15px;
+  background-repeat: no-repeat;
+  background-image: url('../img/fmale.svg');
+  
+}
+.radio-1::after{
+  content: "";
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  background: #F5F8F9;
+  border-radius: 50px;
+  z-index: -10;
+  left: 68px;
+  top: 37px;
+  transition: all .5s ease;
+}
+#radio-button-male:checked + label::after{
+ background-color: #60E6C5;
+}
+.radio-2::after{
+  content: "";
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  background: #F5F8F9;
+  border-radius: 50px;
+  z-index: -10;
+  left: 143px;
+  top: 37px;
+  transition: all .4s ease;
+}
+#radio-button-fmale:checked + label::after{
+  background-color: #60E6C5;
+}
+.pad-data{
+  padding: 7px 10px;
+}
+input[type="date"]{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 7px;
+  line-height: 9px;
+  color: #B1BFCD;  
+}
+.birth-data{
+  margin-bottom: 9px;
+}
+.email-input{
+  margin-bottom:9px;
+}
+.phone-input{
+  margin-bottom: 9px;
+}
+.password-input{
+  margin-bottom: 41px;
+}
+.propdy-radios{
+  display: none;
+}
+.propdy-contetts {
+  position: relative;
+}
+.propdy-labels::before{
+  content: "";
+  width: 11px;
+  height: 8px;
+  transform: translate(-197%, 0);
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-size: cover;
+  position: absolute;
+  background-image: url('../img/card.svg');
+}
+.propdy-labels{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.propdy-labels::after{
+  content: "";
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  background: #C7C7C7;
+  border-radius: 50%;
+  z-index: -10;
+  transform: translate(-112%, 0);
+  transition: all .3s ease;
+}
+.propdy-radios:checked + .propdy-labels::after{
+  background-color: #60E6C5;
+}
+.btns{
+  margin-top: 52px;
+  justify-content: flex-end;
+}
+
+.cansl-btn{
+  width: 79px;
+  height: 26px;
+  cursor: pointer;
+  margin-right: 10px;
+  border: 2px solid #ecf7fb;
+  border-radius: 2px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 7px;
+  line-height: 9px;
+  color: #373D40;
+
+ 
+}
+.save-btn{
+  width: 79px;
+  height: 26px;
+  cursor: pointer;
+  border-radius: 2px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 7px;
+  line-height: 9px;
+  background: #60E6C5;
+  color: #FFFFFF;
+  border: none;
+}
+.cansl-btn:active ~ .card-contents > .firs-card{
+  transform: translate(-33%);
+}
